@@ -1,28 +1,48 @@
-# Mean Stack Development Structured: [Address Book](https://boiling-cliffs-28700.herokuapp.com/)
-Following are the changes, I did in this repository
+# 📒 Address Book - Contact Manager Web App
 
-1. Divide the code into two sections(Client, Sever)
-1. Add new bootstrap style
-1. Also installed dependency using bower
+A simple yet powerful Address Book application built with the **MERN Stack (MongoDB, Express, Angular, Node.js)**. This project allows users to manage contacts efficiently with functionalities to add, edit, delete, search, and export contact data.
 
+## 🌟 Features
 
-### Also installed dependency using bower
+- 🔐 Basic Authentication (Login/Signup)
+- ➕ Add, ✏️ Edit, ❌ Delete contact information
+- 🔍 Search and filter contacts by name or email
+- 📤 Export contacts as a CSV file
+- 💾 Secure contact storage using MongoDB
+- 📱 Responsive and intuitive UI built with Angular
 
-* bootstrap
-* fonts
+## 🛠️ Tech Stack
 
-### Install github
+| Layer        | Technology            |
+|--------------|------------------------|
+| Frontend     | Angular                |
+| Backend      | Node.js + Express.js   |
+| Database     | MongoDB (Mongoose)     |
+| Authentication | JWT / Basic Auth     |
+| Deployment   | Vercel / Netlify       |
 
-Install github: https://desktop.github.com/
+## 🔧 API Endpoints
 
-### Follwoing are the dependeny installed as global
+| Method | Endpoint           | Description                    |
+|--------|--------------------|--------------------------------|
+| GET    | `/api/contacts`    | Get all contacts               |
+| POST   | `/api/contacts`    | Add a new contact              |
+| GET    | `/api/contacts/:id`| Get contact by ID              |
+| PUT    | `/api/contacts/:id`| Update contact by ID           |
+| DELETE | `/api/contacts/:id`| Delete contact by ID           |
 
-* bower
-Note:GitHub must be installed
+## 📂 Folder Structure
 
-### How to Install
-* Download the this repository
-* Navigate to the MeanStack->Structured folder
-* Run the following command prompt
-> npm install
-> bower install
+```bash
+address-book/
+├── backend/
+│   ├── models/
+│   ├── routes/
+│   ├── controllers/
+│   └── server.js
+├── frontend/
+│   ├── src/
+│   │   ├── app/
+│   │   └── assets/
+├── .env
+├── README.md
